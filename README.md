@@ -12,22 +12,32 @@ STUM - Simple Minecraft Utility Manager
 
 ```
 stum/
-├── stum/                  # 主包目录
-│   ├── __init__.py        # 包初始化
-│   ├── config.py          # 配置模块
-│   ├── progress.py        # 进度显示模块
-│   ├── installer.py       # 安装模块
-│   └── launcher.py        # 启动模块
-├── tests/                 # 测试目录
-│   └── __init__.py
-├── scripts/               # 脚本目录
+├── stum/                         # 主包目录
+│   ├── __init__.py               # 包初始化
+│   ├── config.py                 # 配置模块
+│   ├── progress.py               # 进度显示模块
+│   ├── installer.py              # 安装模块
+│   ├── launcher.py               # 启动模块
+│   └── Minecraft_Modpack_inst.py # 模组包安装模块
+├── tests/                        # 测试目录
+│   ├── __init__.py
+│   ├── STUM_GUI_tests.py
+│   ├── unittest_guide.md
+│   └── modder/                   # 模组开发测试
+│       ├── __init__.py
+│       ├── demo_download.py
+│       ├── mod_dev_pack_manager.py
+│       └── test_mod_dev_pack.py
+├── scripts/                      # 脚本目录
 │   ├── seve.py
 │   ├── seves1.py
 │   └── Global_File_Manager.py
-├── docs/                  # 文档目录
-├── main.py                # 主入口文件
-├── requirements.txt       # 依赖列表
-└── README.md              # 说明文档
+├── learn/                        # 学习示例
+│   └── 1class.py
+├── docs/                         # 文档目录
+├── main.py                       # 主入口文件
+├── requirements.txt              # 依赖列表
+└── README.md                     # 说明文档
 ```
 
 ## 安装依赖
