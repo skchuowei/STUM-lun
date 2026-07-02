@@ -184,19 +184,11 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Minecraft runtime & assets (auto-downloaded)
-minecraft/runtime/
-minecraft/assets/objects/
-minecraft/assets/virtual/
-minecraft/libraries/
-minecraft/logs/
-minecraft/crash-reports/
-minecraft/saves/
-minecraft/mods/
-minecraft/resourcepacks/
-minecraft/screenshots/
-minecraft/versions/*/
-!minecraft/versions/*.json
+# Local Minecraft data (auto-downloaded / generated)
+minecraft/
+downloads/
+.uploads/
+logs/
 
 # Native libs & jars
 *.jar
