@@ -75,4 +75,4 @@ python main.py
 
 ## 许可证
 
-MIT License
+GPL-2.0 License
