@@ -57,4 +57,26 @@ def build_launch_options():
     }
 
 
+def update_minecraft_path(new_path):
+    """
+    更新Minecraft安装路径
+
+    参数:
+        new_path (str): 新的Minecraft路径
+    """
+    global MINECRAFT_PATH
+    MINECRAFT_PATH = new_path
+
+
+def update_minecraft_version(new_version):
+    """
+    更新Minecraft版本号
+
+    参数:
+        new_version (str): 新的Minecraft版本号
+    """
+    global MINECRAFT_VERSION
+    MINECRAFT_VERSION = new_version
+
+
 

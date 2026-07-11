@@ -87,11 +87,20 @@ def main():
                     callback
                 )
                 installer.install_mod_loader()
+            case 'get_version':
+                # 获取Minecraft版本
+                installer = McInstall(
+                    MINECRAFT_VERSION,
+                    MINECRAFT_PATH,
+                    DEFAULT_MOD_LOADER,
+                    callback
+                )
+                installer.get_minecraft_version_web()
+
 
             case _:
                 # 未知命令
-                print("未知命令！可用命令：download_mc、launch、exit、up_path、up_version")
-
+                print("未知命令！可用命令：download_mc、launch、exit、up_path、up_version、mod_loader、get_version")
 
 if __name__ == "__main__":
     main()

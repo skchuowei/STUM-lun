@@ -27,3 +27,10 @@ def update_minecraft_version(new_version):
     """
     global MINECRAFT_VERSION
     MINECRAFT_VERSION = new_version
+def change_dist(dak,gh,f):
+    dak[gh] = f
+    return 0
+def cover_dist(y_dist,x_dist):
+    x_dist.clear()
+    x_dist = y_dist
+    return 0

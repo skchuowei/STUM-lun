@@ -44,5 +44,10 @@ class Launcher:
             self.minecraft_version,
             self.launch_options
         )
-        # 执行启动命令
-        subprocess.run(command)
+        try:
+            # 执行启动命令
+            subprocess.run(command)
+        except subprocess.CalledProcessError as e:
+            print(f"启动Minecraft游戏时出错: {e}")
+        else:
+            print("Minecraft游戏启动成功")

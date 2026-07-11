@@ -83,4 +83,9 @@ class McInstall:
                 self.minecraft_path,
                 self.callback
             )
-            print('下载完成')
+            print('下载完成')    
+    def get_minecraft_version_web(self):
+        mc_version = mclib.utils.get_versions()
+        for version in mc_version:
+            print(f'版本：{version["id"]}\n类型：{version["type"]}发布时间：{version["releaseTime"]}')
+
